@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #ff4d88;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d88;
+    }
+
+    section {
+      padding: 70px 10% 50px;
+      text-align: center;
+    }
+
+    .hero {
+      margin-top: 70px;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #ff4d88;
+    }
+
+    .hero p {
+      margin-top: 12px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #ff4d88;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255, 77, 136, 0.5);
+    }
+
+    .btn:hover {
+      background: #e63b75;
+      box-shadow: 0 0 20px rgba(255, 77, 136, 0.7);
+    }
+
+    .about, .skills, .projects, .contact {
+      background: #fff;
+      margin-top: 30px;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .skills li {
+      list-style: none;
+      padding: 10px 20px;
+      background: #f3f3f3;
+      border-radius: 20px;
+      border: 1px solid #ff4d88;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .project-card:hover {
+      border: 1px solid #ff4d88;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 77, 136, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      background: #fff;
+      color: #666;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyPortfolio</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Hello, I'm <span style="color:#111;">Your Name</span></h2>
+    <p>A passionate Web Developer & Designer. I create modern, stylish and user-friendly websites with love.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m a creative and detail-oriented developer who loves building beautiful websites. I focus on clean design, smooth interactions, and user-friendly experiences.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Bootstrap</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A modern responsive website design.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A stylish personal blog with light theme.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>An elegant e-commerce landing page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
