@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Zaakia | Frontend Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,8 +14,8 @@
     }
 
     body {
-      background: #f9f9f9;
-      color: #111;
+      background: #f5f7fa;
+      color: #1a1a1a;
       line-height: 1.6;
     }
 
@@ -24,7 +24,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 10%;
-      background: #fff;
+      background: #ffffff;
       position: fixed;
       width: 100%;
       top: 0;
@@ -33,8 +33,9 @@
     }
 
     header h1 {
-      color: #ff4d88;
+      color: #1f3c88;
       font-size: 1.8rem;
+      font-weight: 700;
     }
 
     nav a {
@@ -46,7 +47,7 @@
     }
 
     nav a:hover {
-      color: #ff4d88;
+      color: #1f3c88;
     }
 
     section {
@@ -60,7 +61,7 @@
 
     .hero h2 {
       font-size: 2.2rem;
-      color: #ff4d88;
+      color: #1f3c88;
     }
 
     .hero p {
@@ -75,31 +76,37 @@
       display: inline-block;
       margin-top: 20px;
       padding: 12px 28px;
-      background: #ff4d88;
+      background: #1f3c88;
       color: #fff;
       border-radius: 30px;
       text-decoration: none;
       transition: 0.3s;
-      box-shadow: 0 0 10px rgba(255, 77, 136, 0.5);
+      box-shadow: 0 0 10px rgba(31,60,136,0.5);
     }
 
     .btn:hover {
-      background: #e63b75;
-      box-shadow: 0 0 20px rgba(255, 77, 136, 0.7);
+      background: #162a66;
+      box-shadow: 0 0 20px rgba(31,60,136,0.7);
     }
 
     .about, .skills, .projects, .contact {
-      background: #fff;
+      background: #ffffff;
       margin-top: 30px;
       border-radius: 10px;
       padding: 30px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .about h2, .skills h2, .projects h2, .contact h2 {
+      color: #1f3c88;
+      margin-bottom: 15px;
     }
 
     .skills ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 12px;
       margin-top: 15px;
     }
@@ -107,10 +114,10 @@
     .skills li {
       list-style: none;
       padding: 10px 20px;
-      background: #f3f3f3;
+      background: #e2e8f0;
       border-radius: 20px;
-      border: 1px solid #ff4d88;
-      color: #333;
+      border: 1px solid #1f3c88;
+      color: #1a1a1a;
       font-weight: 500;
     }
 
@@ -122,7 +129,7 @@
     }
 
     .project-card {
-      background: #fafafa;
+      background: #f9fafc;
       border-radius: 10px;
       padding: 20px;
       transition: 0.3s;
@@ -130,25 +137,29 @@
     }
 
     .project-card:hover {
-      border: 1px solid #ff4d88;
+      border: 1px solid #1f3c88;
       transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(255, 77, 136, 0.3);
+      box-shadow: 0 0 15px rgba(31,60,136,0.3);
     }
 
     footer {
       text-align: center;
       padding: 20px;
       margin-top: 30px;
-      background: #fff;
+      background: #ffffff;
       color: #666;
       box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    }
+
+    a {
+      color: #1f3c88;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>MyPortfolio</h1>
+    <h1>Zaakia</h1>
     <nav>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
@@ -159,14 +170,14 @@
   </header>
 
   <section id="hero" class="hero">
-    <h2>Hello, I'm <span style="color:#111;">Your Name</span></h2>
-    <p>A passionate Web Developer & Designer. I create modern, stylish and user-friendly websites with love.</p>
+    <h2>Hello, I'm <span style="color:#1a1a1a;">Zaakia</span></h2>
+    <p>A creative Frontend Developer focused on building modern, professional, and user-friendly websites. I combine clean design with interactive experience.</p>
     <a href="#projects" class="btn">View My Work</a>
   </section>
 
   <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I’m a creative and detail-oriented developer who loves building beautiful websites. I focus on clean design, smooth interactions, and user-friendly experiences.</p>
+    <p>I’m a detail-oriented Frontend Developer skilled in HTML, CSS, JavaScript, and modern frameworks. I enjoy transforming ideas into responsive, engaging web experiences with a focus on usability and aesthetics.</p>
   </section>
 
   <section id="skills" class="skills">
@@ -177,6 +188,7 @@
       <li>JavaScript</li>
       <li>React</li>
       <li>Bootstrap</li>
+      <li>Tailwind CSS</li>
     </ul>
   </section>
 
@@ -184,28 +196,28 @@
     <h2>My Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Project One</h3>
-        <p>A modern responsive website design.</p>
+        <h3>Portfolio Website</h3>
+        <p>A professional, responsive portfolio showcasing my frontend projects.</p>
       </div>
       <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A stylish personal blog with light theme.</p>
+        <h3>E-commerce UI</h3>
+        <p>A clean and modern e-commerce front-end design using HTML, CSS, and JS.</p>
       </div>
       <div class="project-card">
-        <h3>Project Three</h3>
-        <p>An elegant e-commerce landing page.</p>
+        <h3>Landing Page</h3>
+        <p>A sleek landing page design with smooth interactions and responsive layout.</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>Email: yourmail@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>Email: <a href="mailto:zaakia@example.com">zaakia@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/zaakia" target="_blank">linkedin.com/in/zaakia</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 Zaakia. All Rights Reserved.</p>
   </footer>
 
 </body>
